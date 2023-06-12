@@ -15,7 +15,7 @@ const MainContext = ({ children }) => {
     const watchArray = []
 
     async function isAuthorized() {
-        await axios.get('http://localhost:3003/isAuthorized', {
+        await axios.get('/isAuthorized', {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('token')}`
             }
@@ -27,12 +27,12 @@ const MainContext = ({ children }) => {
         });
     }
     async function fetchCryptoInfo() {
-        await axios.get(`http://localhost:3003/cryptoinfo`)
+        await axios.get(`/cryptoinfo`)
             .then((res) => {
                 setListOfCoins(res.data.data)
                 setLoaded(true)
             })
-        await axios.get('http://localhost:3003/infoline', {
+        await axios.get('/infoline', {
         }).then((res) => {
             setMarketCap(res.data.data.quote.USD.total_market_cap.toFixed(1))
             setMarketCapChange(res.data.data.quote.USD.total_market_cap_yesterday_percentage_change.toFixed(2))
@@ -45,7 +45,7 @@ const MainContext = ({ children }) => {
             await fetchCryptoInfo()
         }
         console.log(listOfCoins);
-        await axios.get('http://localhost:3003/getWatchlist', {
+        await axios.get('/getWatchlist', {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('token')}`
             }

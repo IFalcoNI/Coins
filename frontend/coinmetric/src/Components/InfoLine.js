@@ -23,7 +23,7 @@ export default function InfoLine({ toggleTheme }) {
             })
     }, [])
     useEffect(() => {
-        axios.get('http://localhost:3003/infoline', {
+        axios.get('/infoline', {
         }).then((res) => {
             // console.log(res.data.data);
             setCryptos(res.data.data.total_cryptocurrencies)

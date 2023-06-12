@@ -21,7 +21,11 @@ const user = sequelize.define('User', {
         allowNull: false
     },
     watchlist: {
-        type: DataTypes.JSONB,
+        type: DataTypes.JSON,
+        allowNull: true
+    },
+    portfolio: {
+        type: DataTypes.JSON,
         allowNull: true
     },
 

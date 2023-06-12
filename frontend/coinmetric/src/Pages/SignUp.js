@@ -11,12 +11,13 @@ export default function SignUp() {
     const [isSignedUp, setIsSignedUp] = useState(false)
 
     const sendUserInfo = () => {
-        axios.post('http://localhost:3003/signup', {
+        axios.post('/signup', {
             username: username,
             email: email,
             password: password,
             confirmPassword: confirmPassword,
-            watchlist: {watchlist:[]}
+            watchlist: {watchlist:[]},
+            portfolio: { portfolio:[]}
         }).then(res => {
             if (res.data === 'newUser') {
                 setIsSignedUp(true)

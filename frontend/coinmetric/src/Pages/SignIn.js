@@ -13,7 +13,7 @@ export default function SignIn() {
   const [isSignedIn, setIsSignedIn] = useState(false)
 
   const sendUserInfo = async () => {
-    await axios.post('http://localhost:3003/signin', {
+    await axios.post('/signin', {
       email: email,
       password: password,
     }).then(res => {

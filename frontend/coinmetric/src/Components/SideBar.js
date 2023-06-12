@@ -8,7 +8,7 @@ import MainContext, { MainState } from '../MainContext';
 export default function SideBar({ image, name, description, symbol, price, supply, supplyTotal, marketCap }) {
     const { user } = MainState()
     async function addToWatchList() {
-        await axios.put('http://localhost:3003/addtowatchlist', { coin: symbol }, {
+        await axios.put('/addtowatchlist', { coin: symbol }, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('token')}`
             }
