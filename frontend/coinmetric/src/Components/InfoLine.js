@@ -23,7 +23,7 @@ export default function InfoLine({ toggleTheme }) {
             })
     }, [])
     useEffect(() => {
-        axios.get('/infoline', {
+        axios.get('https://coinmetricserver.onrender.com/infoline', {
         }).then((res) => {
             // console.log(res.data.data);
             setCryptos(res.data.data.total_cryptocurrencies)
