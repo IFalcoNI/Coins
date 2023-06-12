@@ -6,7 +6,7 @@ const axios = require('axios')
 require('dotenv').config()
 const { authToken, generateToken, generateRefreshToken } = require('../utils/helperJWT')
 const app = express()
-const PORT = 3003
+const PORT = 30010
 
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))

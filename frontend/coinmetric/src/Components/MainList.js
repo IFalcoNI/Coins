@@ -9,7 +9,7 @@ import formatCompactNumber from '../helpers/compactNumbers'
 export default function MainList() {
     const [limit, setLimit] = useState(100)
     const [searchCoin, setSearchCoin] = useState('')
-    const { isLoaded, listOfCoins, marketCap, marketCapChange, fetchCryptoInfo, getWatchList} = MainState();
+    const { isLoaded, listOfCoins, marketCap, marketCapChange, fetchCryptoInfo, getWatchList } = MainState();
 
     useEffect(() => {
         fetchCryptoInfo()
