@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { Link, Navigate } from 'react-router-dom'
-import '../Styles/SignForm/SignUp.css'
+import './Styles/SignForm/Sign.css'
 
 export default function SignUp() {
     const [username, setUsername] = useState('')
@@ -15,7 +15,8 @@ export default function SignUp() {
             username: username,
             email: email,
             password: password,
-            confirmPassword: confirmPassword
+            confirmPassword: confirmPassword,
+            watchlist: {watchlist:[]}
         }).then(res => {
             if (res.data === 'newUser') {
                 setIsSignedUp(true)
@@ -32,28 +33,28 @@ export default function SignUp() {
             <div className='SignForm'>
                 <h2>Sign up</h2>
                 <div className="username">
-                    <input className='signup-input' onChange={e => {
+                    <input className='sign-input' onChange={e => {
                         setUsername(e.target.value)
                     }} type="text" placeholder='username' />
                 </div>
                 <div className="email">
-                    <input className='signup-input' onChange={e => {
+                    <input className='sign-input' onChange={e => {
                         setEmail(e.target.value)
                     }} type="email" placeholder='email' />
                 </div>
                 <div className="password">
-                    <input className='signup-input' onChange={e => {
+                    <input className='sign-input' onChange={e => {
                         setPassword(e.target.value)
                     }} type="password" placeholder='password' />
                 </div>
                 <div className="password">
                     {/* <h4>confirm password</h4> */}
-                    <input className='signup-input' onChange={e => {
+                    <input className='sign-input' onChange={e => {
                         setConfirmPassword(e.target.value)
                     }} type="password" placeholder='confirm password' />
                 </div>
                 <div className='link'>Already have an account? <Link to={'/signin'}>Sign in</Link></div>
-                <button className='signup-button' onClick={sendUserInfo}>Send</button>
+                <button className='sign-button' onClick={sendUserInfo}>Send</button>
             </div> : <Navigate to='/signin' />
     )
 }

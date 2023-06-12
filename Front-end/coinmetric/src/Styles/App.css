@@ -2,13 +2,62 @@
   padding: 0;
   margin: 0;
 }
+body{
+  position:relative;
+  min-height: 100vh;
+}
+.light {
+  --primary: rgba(0, 0, 255, 0.624);
+  --color: black;
+  --info-key: rgb(27, 27, 27);
+  --info-value: blue;
+  --sign-color: rgb(27, 27, 27);
+  --sign-bg: rgb(227, 227, 227);
+  --sign-border: blue;
+  --main-bg: rgba(0, 0, 255, 0.624);
+  --header-logo-up: rgb(46, 12, 180);
+  --header-logo-down: rgb(0, 4, 116);
+  --mainlist-text: rgb(27, 27, 27);
+  --mainlist-coin-text: rgb(27, 27, 27);
+  --coin-bg: rgb(236, 236, 236);
+  --single-coin-name: rgba(0, 0, 255, 0.624);
+  --single-coin-text: rgb(27, 27, 27);
+  --single-coin-info: rgb(254, 152, 3);
+  --sign: rgba(76, 76, 76, 0.146);
+  --background:
+    rgb(239, 239, 239) 
+;
+  transition: color 0.3s ease-in-out;
+}
+.dark {
+  --primary: rgba(0, 157, 255);
+  --color: white;
+  --info-key: rgb(215, 215, 215);
+  --info-value: rgb(0, 157, 255);
+  --sign-color: rgb(215, 215, 215);
+  --sign-bg: rgb(0, 57, 93);
+  --sign-border: rgb(0, 157, 255);
+  --main-bg: rgba(0, 157, 255);
+  --header-logo-up: rgb(51, 0, 255);
+  --header-logo-down: rgb(0, 0, 0);
+  --mainlist-text: rgb(215, 215, 215);
+  --mainlist-coin-text: rgb(215, 215, 215);
+  --coin-bg: rgb(33, 33, 43);
+  --single-coin-name: rgba(0, 157, 255);
+  --single-coin-text: rgb(215, 215, 215);
+  --single-coin-info: '#fe9802';
+  --sign: rgba(0, 157, 255, 0.148);
+  --background: 
+    rgb(32, 32, 43);
+  transition: color 0.3s ease-in-out;
+}
 .App {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
   width: 100%;
   height: 100%;
-}
-body {
-  background-color: rgb(90, 90, 90);
-  height: 100vh;
+  min-height: 100vh;
+  background: var(--background);
 }

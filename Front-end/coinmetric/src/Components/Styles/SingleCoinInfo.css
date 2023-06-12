@@ -1,0 +1,33 @@
+.Chart {
+  width: 90%;
+  border-left: 2px solid var(--single-coin-name);
+  /* border-radius: 20px; */
+  padding: 20px;
+  color: wheat;
+}
+.Chart_Buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.Select_Button {
+  background-color: black;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+
+  /* width: 100%;
+  height: 100%; */
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  /* margin: 5px; */
+  /* gap: 5px; */
+  /* text-decoration: none; */
+  /* padding: 5px 20px; */
+  color: var(--sign-color);
+  background-color: var(--sign-bg);
+  border-radius: 8px;
+  border: 2px solid var(--sign-border);
+  font-weight: bold;
+  cursor: pointer;
+}

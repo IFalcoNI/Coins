@@ -1,0 +1,66 @@
+.Infoline {
+  background-color: rgb(21, 21, 54);
+  background-color: var(--background);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+.Infoline_Main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+}
+.Infoline_Menu {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.Infoline_Main > ul {
+  display: flex;
+  list-style: none;
+  color: grey;
+}
+li {
+  margin: 10px 15px;
+  color: var(--info-key);
+}
+li > span {
+  color: var(--info-value);
+}
+.changeTheme {
+  background: none;
+  border: none;
+}
+.changeTheme > img {
+  height: 20px;
+}
+.Infoline_SignIn {
+  margin-right: 10px;
+}
+.Infoline_SignIn,
+.Infoline_SignUp {
+  text-decoration: none;
+  padding: 5px 20px;
+  color: var(--sign-color);
+  background-color: var(--sign-bg);
+  border-radius: 8px;
+  border: 2px solid var(--sign-border);
+  font-weight: bold;
+}
+.Infoline_User {
+  display: flex;
+  gap: 5px;
+}
+.User_Name,
+.Logout {
+  padding: 5px 20px;
+  color: var(--sign-color);
+  background-color: var(--sign-bg);
+  /* background-color: var(--sign-bg); */
+  border-radius: 8px;
+  border: 2px solid var(--sign-border);
+  font-weight: bold;
+}

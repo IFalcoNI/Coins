@@ -1,0 +1,92 @@
+.PortfolioCoin {
+  color: var(--mainlist-coin-text);
+}
+.PortfolioCoin_Id {
+  width: 20px;
+}
+.PortfolioCoin_Name_Field {
+  width: 150px;
+}
+.PortfolioCoin_Icon {
+  height: 40px;
+}
+.PortfolioCoin_Price {
+  width: 150px;
+  font-weight: bold;
+}
+.PortfolioCoin_Change_Hour {
+  width: 50px;
+}
+.PortfolioCoin_Change_Day {
+  width: 50px;
+}
+.PortfolioCoin_Change_Week {
+  width: 50px;
+}
+.PortfolioCoin_MarketCap {
+  width: 150px;
+}
+.PortfolioCoin_Volume_Day {
+  width: 150px;
+}
+.PortfolioCoin_Circulattion {
+  width: 200px;
+}
+.Supply {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  /* width: 250px; */
+}
+.PortfolioCoinList {
+  display: flex;
+  font-size: 14px;
+}
+.PortfolioCoin td {
+  padding: 15px 10px;
+  /* background-color: var(--coin-bg); */
+  height: 60px;
+  text-align: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.PortfolioCoin {
+  /* padding: 10px 0; */
+  border-bottom: 1px solid grey;
+}
+.PortfolioCoin:last-child{
+  border: none;
+}
+.PortfolioCoin_Fav {
+
+}
+.PortfolioCoin_Fav img {
+  width: 25px;
+  height: 25px;
+  /* margin: 0 auto; */
+  /* height: 100%; */
+}
+.PortfolioCoin_Name_Field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.greenMarker {
+  color: green;
+}
+.redMarker {
+  color: red;
+}
+.Actions{
+    /* height: 30px; */
+    font-weight: 900;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2px;
+    align-items: center;
+    transform: rotate(90deg);
+    justify-content: center;
+}
