@@ -1,0 +1,60 @@
+.MainList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  color: var(--mainlist-text);
+  margin-bottom: 100px;
+}
+.MainList h2 {
+  color: var(--mainlist-text);
+}
+.CoinList {
+  width: 100%;
+  
+}
+.CoinList > table {
+  /* width: 100%; */
+  /* table-layout: fixed; */
+  background: var(--coin-bg);
+  padding-top: 20px;
+  border-radius: 20px;
+  border-collapse: collapse;
+
+
+}
+.CoinList > thead {
+  /* width: 100%; */
+  /* table-layout: fixed; */
+  /* background: var(--coin-bg); */
+  padding-top: 20px;
+  /* margin: 20px */
+  /* border-top-left-radius: 30px;
+  border-top-right-radius: 30px; */
+
+}
+.MainList_Header {
+  margin: 20px;
+}
+.MainList_Options {
+  color: var(--mainlist-text);
+  
+}
+.MainList_Options {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  
+}
+.MainList_Limit,
+.MainList_Search {
+  color: var(--sign-color);
+  background-color: var(--sign-bg);
+  border-radius: 10px;
+  border: 2px solid var(--sign-border);
+  font-weight: bold;
+}
+.MainList_Search {
+  padding: 5px 10px;
+}

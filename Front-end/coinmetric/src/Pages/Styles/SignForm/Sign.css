@@ -1,0 +1,85 @@
+.SignForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  padding: 35px;
+  border-radius: 40px;
+  background: var(--sign);
+color: var(--primary);
+  transition: box-shadow 0.5s;
+}
+/* .SignForm:hover {
+} */
+
+.sign-input {
+  padding: 10px 10px 10px 0;
+  width: 200px;
+  margin: 10px auto;
+  background-color: #bcbcbc;
+  border: solid 1px #272727;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: var(--color);
+  border-bottom: 2px solid var(--primary);
+  transition: 0.25s;
+
+}
+.sign-input:focus {
+  border-bottom: 2px solid rgb(50, 255, 47);
+}
+.sign-input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: var(--color);
+}
+svg {
+  height: 22px;
+  margin: 0 10px -3px 25px;
+}
+.sign-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: var(--color);
+  text-align: center;
+  background: var(--primary);
+  transition: 0.5s;
+  margin-top: 20px;
+}
+.sign-button:hover {
+  background: #2fdbb6;
+}
+.sign-button:active {
+  background: #1da88a;
+}
+.link {
+  color: var(--color);
+  padding-top: 20px;
+  text-align: center;
+}
+.link a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 15px;
+  transition: color 0.2s;
+}
+.link a:hover {
+  color: #696969;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 9999s;
+  -webkit-text-fill-color: var(--color) !important;
+}

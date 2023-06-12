@@ -1,0 +1,12 @@
+.SingleCoin {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  /* align-items: center; */
+}
+.SideBar_Metric{
+  text-align: left;
+}
+

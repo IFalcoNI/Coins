@@ -1,0 +1,54 @@
+.SideBar {
+  width: 90%;
+  max-width: 320px;
+  margin-right: 20px;
+  text-align: center;
+}
+.SideBar_Info {
+  border-bottom: 2px solid var(--single-coin-name);
+  /* border-radius: 20px; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.SideBar_Metric {
+  /* border: 4px solid var(--single-coin-name); */
+  /* border-radius: 20px; */
+  padding: 20px;
+  margin-top: 10px;
+}
+.SideBar_Coin_Image {
+  width: 50%;
+}
+.SideBar_Coin_Name {
+  font-weight: bold;
+  padding: 10px;
+  color: var(--single-coin-name);
+}
+.SideBar_Coin_Description,
+.SideBar_Metric_Info,
+.SideBar_Metric_Info_Field {
+  color: var(--single-coin-text);
+}
+.SideBar_Metric_Info_Field > span {
+  color: var(--single-coin-info);
+}
+.SideBar_AddToWathlist {
+  margin-right: 10px;
+  /* width: 150px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  gap: 5px;
+  text-decoration: none;
+  padding: 5px 20px;
+  color: var(--sign-color);
+  background-color: var(--sign-bg);
+  border-radius: 8px;
+  border: 2px solid var(--sign-border);
+  font-weight: bold;
+  cursor: pointer;
+}
