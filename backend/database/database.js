@@ -1,8 +1,9 @@
 const { Sequelize } = require('sequelize');
+require('dotenv').config()
 
-const sequelize = new Sequelize('b3zlzwbdzpd6gcuq1aqy', 'uy36iel4mzsevmfk', 'PY49kZtaT5jCcE8DfCsJ', {
+const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USERNAME, process.env.DB_PASS, {
     dialect: 'mysql',
-    host: 'b3zlzwbdzpd6gcuq1aqy-mysql.services.clever-cloud.com'
+    host: process.env.DB_HOST
 });
 
 module.exports = sequelize;
