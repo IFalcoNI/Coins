@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
-import Chart from 'chart.js/auto';
+import { CategoryScale, LinearScale, PointElement, LineElement, Chart } from "chart.js";
+
+
 import { Line } from "react-chartjs-2";
 import './Styles/SingleCoinInfo.css'
 import { MainState } from '../MainContext';
@@ -9,6 +11,7 @@ import SelectButton from './SelectButton';
 import { chartDays } from '../config/ChartDays';
 
 export default function SingleCoinInfo({ name }) {
+    Chart.register(CategoryScale, LinearScale, PointElement, LineElement);
     const [chartData, setChartData] = useState()
     const [days, setDays] = useState(1)
     // const { } = MainState
