@@ -13,7 +13,7 @@ export default function SignIn() {
   const [isSignedIn, setIsSignedIn] = useState(false)
 
   const sendUserInfo = async () => {
-    await axios.post('/signin', {
+    await axios.post('https://coinmetricserver.onrender.com/signin', {
       email: email,
       password: password,
     }).then(res => {
