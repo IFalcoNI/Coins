@@ -11,7 +11,7 @@ export default function SignUp() {
     const [isSignedUp, setIsSignedUp] = useState(false)
 
     const sendUserInfo = () => {
-        axios.post('/signup', {
+        axios.post('https://coinmetricserver.onrender.com/signup', {
             username: username,
             email: email,
             password: password,
