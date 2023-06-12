@@ -6,7 +6,7 @@ const axios = require('axios')
 require('dotenv').config()
 const { authToken, generateToken, generateRefreshToken } = require('../utils/helperJWT')
 const app = express()
-const PORT = 30010
+const PORT = 3003
 
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))
@@ -22,6 +22,7 @@ sequelize
 
 
 app.post('/signup', async (req, res) => {
+    console.log('works');
     const passCheck = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
     // console.log(req.body);
     const username = req.body.username;
@@ -35,7 +36,7 @@ app.post('/signup', async (req, res) => {
             if (passCheck.test(password)) {
                 const newUser = await user.create(req.body)
                 res.send('newUser')
-                // console.log(newUser);
+                console.log(newUser);
             } else {
                 res.send("password is too weak")
             }

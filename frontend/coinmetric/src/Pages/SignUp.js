@@ -17,7 +17,7 @@ export default function SignUp() {
             password: password,
             confirmPassword: confirmPassword,
             watchlist: {watchlist:[]},
-            portfolio: { portfolio:[]}
+            portfolio: {portfolio:[]}
         }).then(res => {
             if (res.data === 'newUser') {
                 setIsSignedUp(true)
