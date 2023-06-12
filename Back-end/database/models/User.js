@@ -20,6 +20,10 @@ const user = sequelize.define('User', {
         type: DataTypes.STRING,
         allowNull: false
     },
+    watchlist: {
+        type: DataTypes.JSONB,
+        allowNull: true
+    },
 
 },
     { tableName: "Users" })
